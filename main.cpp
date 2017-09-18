@@ -12,7 +12,7 @@ int main()
     std::cin >> desiredHeight;
 
 
-    int dt = 1; //can be changed for precision
+    double dt = .0001; //can be changed for precision
     double lastError = 0;
     while(desiredHeight != getHeight()) {
     	double sum = 0;
@@ -40,5 +40,6 @@ int main()
 
     	sleep(dt);
     }
+
     std::cout << "Done";
 }
